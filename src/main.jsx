@@ -18,29 +18,36 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const skills = {
-  Frontend: ["React.js", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Angular", "React Native"],
+  Frontend: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+)", "Angular", "React Native", "HTML5", "CSS3", "Bootstrap"],
+  Backend: ["Node.js", "Express.js", "REST APIs", "GraphQL", "PHP", "Drupal"],
+  Databases: ["MariaDB", "MySQL"],
   "State Management": ["Redux", "Redux-Saga", "Redux Thunk", "Context API"],
-  Architecture: ["Micro Frontends", "SSR", "Code Splitting", "Lazy Loading", "Responsive Design"],
-  "API & Backend": ["REST APIs", "GraphQL", "Node.js", "Express.js", "PHP", "MySQL", "MariaDB"],
-  Testing: ["Jest", "Playwright", "Enzyme", "Jasmine"],
+  "Architecture & Performance": ["Micro Frontends (MFE)", "SSR", "Code Splitting", "Lazy Loading", "Responsive Design", "Performance Optimization"],
+  Testing: ["Jest", "React Testing Library", "Playwright", "Jasmine"],
+  Security: ["Application Security", "VAPT / Pen-Test Remediation", "Secure Coding", "SonarQube", "OSS/FOSS Vulnerability Remediation"],
   "Build & DevOps": ["Webpack", "Vite", "Rollup", "Azure DevOps", "CI/CD"],
-  "AI-Assisted Development": ["Generative AI", "Claude Code", "Prompt Engineering", "AI-assisted debugging", "Automated test generation"]
+  Tools: ["Git", "Chrome DevTools", "Redux DevTools"],
+  "AI-Assisted Development": ["Claude Code", "Generative AI", "Prompt Engineering", "AI-assisted debugging", "Automated test generation"]
 };
 
 const experience = [
   {
     company: "DBS Tech India",
-    role: "Application Developer | Frontend Engineer",
+    role: "Application Specialist | Associate | Frontend Engineer",
     period: "Aug 2022 — Present",
     location: "Hyderabad, Telangana",
     highlights: [
-      "Built DBS Marketplace across travel, car and home search/loan estimation using React, Next.js and TypeScript with Micro-Frontend architecture.",
-      "Designed GraphQL booking flows for flights and hotels, covering seamless search-to-payment experiences.",
-      "Designed and developed the E-Document App for DBS Credit Card users with secure login, encrypted data retrieval and instant downloads.",
-      "Integrated Claude Code for real-time bug detection and automated test-case generation, reducing production bugs by 15%.",
-      "Boosted application efficiency by 30% by transforming monolithic architecture into developer-friendly Micro-Frontends.",
-      "Optimized React/Next.js performance through code splitting, lazy loading and rendering optimization; reduced page load time by ~5%.",
-      "Developed unit and end-to-end test suites using Jest and Playwright and supported secure, compliant production releases."
+      "Built DBS Marketplace, a multi-domain platform covering travel, car, home search and loan estimation using React.js, Next.js, TypeScript and Micro-Frontend architecture.",
+      "Designed and developed GraphQL-based flight and hotel booking flows, enabling seamless search-to-payment experiences.",
+      "Developed secure eDocuments functionality for DBS Credit Card customers, including secure authentication, encrypted data retrieval and instant downloads of eStatements and eAdvices.",
+      "Developed and integrated application features with backend APIs and services, supporting secure data exchange and customer-facing financial workflows.",
+      "Analyzed and remediated VAPT/penetration-testing findings across frontend and backend components, supporting successful security clearance for production releases.",
+      "Resolved SonarQube, OSS and FOSS vulnerabilities, improving the overall security posture of existing applications.",
+      "Improved application efficiency by 30% by transforming monolithic functionality into scalable, developer-friendly Micro-Frontends.",
+      "Optimized React.js/Next.js performance using code splitting, lazy loading and rendering optimization, reducing page load time by ~25%.",
+      "Developed and maintained unit and end-to-end test suites using Jest and Playwright, improving application reliability and regression coverage.",
+      "Integrated Claude Code and AI-assisted development workflows for bug detection and automated test-case generation, contributing to a 35% reduction in production bugs.",
+      "Led production releases through structured Change Request (CR) processes and contributed to CI/CD practices using Azure DevOps in Agile teams."
     ]
   },
   {
@@ -49,11 +56,13 @@ const experience = [
     period: "Mar 2020 — Aug 2022",
     location: "Hyderabad, Telangana",
     highlights: [
-      "Designed and developed Prime Grand Rounds health feedback platform using Angular, HTML, CSS and Bootstrap.",
-      "Built cross-platform iOS and Android applications with React Native, JSX and Redux.",
-      "Developed modules for rounding, issues, reports, dashboards and administration.",
-      "Designed Invoice Management Tool and Coach Rounds using React.js, Redux and Redux-Saga.",
-      "Applied Jasmine, Jest and Enzyme testing practices and collaborated in Agile/Scrum teams using Azure DevOps."
+      "Designed and developed the Prime Grand Rounds healthcare feedback platform using Angular, HTML5, CSS3 and Bootstrap.",
+      "Built cross-platform iOS and Android applications using React Native, JSX and Redux.",
+      "Developed modules for rounding, issues, reports, dashboards and administration, supporting healthcare workflow management.",
+      "Designed and developed an Invoice Management Tool using React.js, Redux and Redux-Saga.",
+      "Integrated frontend applications with APIs to support application workflows and data-driven modules.",
+      "Applied Jasmine, Jest and Enzyme for unit and component testing, improving application reliability.",
+      "Collaborated in Agile/Scrum teams and used Azure DevOps for issue tracking and development activities."
     ]
   },
   {
@@ -62,10 +71,10 @@ const experience = [
     period: "Aug 2018 — Feb 2020",
     location: "Hyderabad, Telangana",
     highlights: [
-      "Developed Aajubaaju e-Classifieds using React.js with user, listing and administration modules.",
+      "Developed the Aajubaaju e-Classifieds platform using React.js with modules for user, listing and administration.",
       "Integrated Google Maps API for location-based services.",
       "Developed and maintained web applications for Imperial Sugar and Dixie Crystals using PHP, Drupal and HTML/CSS.",
-      "Built responsive web and mobile UIs with HTML5, CSS3 and JavaScript."
+      "Built responsive and cross-browser user interfaces for web and mobile platforms using JavaScript, HTML5 and CSS3."
     ]
   }
 ];
@@ -74,14 +83,14 @@ const projects = [
   {
     title: "DBS Marketplace",
     type: "Micro-Frontend Platform",
-    description: "Multi-domain customer platform covering travel, car and home experiences, with GraphQL-powered flight and hotel booking flows.",
-    tags: ["React", "Next.js", "TypeScript", "GraphQL", "MFE"]
+    description: "Multi-domain customer platform covering travel, car and home experiences, backed by GraphQL-powered flight and hotel booking flows and secure API integrations.",
+    tags: ["React", "Next.js", "TypeScript", "Node.js", "GraphQL", "MFE"]
   },
   {
     title: "DBS E-Document App",
     type: "Secure Customer Application",
-    description: "Credit-card document experience for secure login, encrypted data retrieval and instant statement/advice downloads.",
-    tags: ["React", "Security", "Downloads", "Testing"]
+    description: "Credit-card eDocuments experience with secure authentication, encrypted data retrieval and instant eStatement/eAdvice downloads, hardened via VAPT remediation.",
+    tags: ["React", "Node.js", "Application Security", "Testing"]
   },
   {
     title: "Prime Grand Rounds",
@@ -118,15 +127,16 @@ function App() {
           <Hero>
             <HeroGlow />
             <HeroTopline><StatusDot /> Currently building digital experiences at DBS Tech India</HeroTopline>
-            <Eyebrow>Senior Frontend Engineer · React · TypeScript</Eyebrow>
+            <Eyebrow>Full-Stack Engineer · React · Node.js · TypeScript</Eyebrow>
             <HeroTitle>
-              I build <Gradient>scalable</Gradient> frontend
+              I build <Gradient>scalable</Gradient> full-stack
               <br />experiences that matter.
             </HeroTitle>
             <HeroText>
-              8+ years of experience engineering high-performance web and mobile
-              applications across banking, marketplace and healthcare products.
-              Strong in React, Next.js, TypeScript, React Native and Micro-Frontends.
+              8+ years of experience engineering scalable, secure and high-performance web and
+              mobile applications across FinTech, banking and healthcare products.
+              Strong in React, Next.js, TypeScript, Node.js, Express.js, GraphQL and Micro-Frontends,
+              with a track record of application security and VAPT remediation.
             </HeroText>
             <Actions>
               <PrimaryButton href="#experience">Explore my experience ↓</PrimaryButton>
@@ -134,14 +144,14 @@ function App() {
             </Actions>
             <HeroMeta>
               <MetaItem><span>Based in</span><strong>Hyderabad, India</strong></MetaItem>
-              <MetaItem><span>Specialization</span><strong>Frontend Architecture</strong></MetaItem>
-              <MetaItem><span>Focus</span><strong>React Ecosystem</strong></MetaItem>
+              <MetaItem><span>Specialization</span><strong>Full-Stack Architecture</strong></MetaItem>
+              <MetaItem><span>Focus</span><strong>React + Node.js Ecosystem</strong></MetaItem>
             </HeroMeta>
             <Stats>
               <Stat><strong>8+</strong><span>Years experience</span></Stat>
-              <Stat><strong>3+</strong><span>Years Angular</span></Stat>
-              <Stat><strong>2+</strong><span>Years React Native</span></Stat>
               <Stat><strong>30%</strong><span>Efficiency improvement</span></Stat>
+              <Stat><strong>25%</strong><span>Faster page loads</span></Stat>
+              <Stat><strong>35%</strong><span>Fewer production bugs</span></Stat>
             </Stats>
           </Hero>
 
@@ -153,14 +163,16 @@ function App() {
             <AboutGrid>
               <AboutCard>
                 <p>
-                  I build scalable, maintainable and customer-focused applications across
+                  I build scalable, secure and customer-focused applications across
                   web and mobile. My core strength is turning complex product requirements
-                  into clean frontend architecture, reusable components and reliable user experiences.
+                  into clean architecture, reusable components, reliable APIs and
+                  trustworthy user experiences — end to end.
                 </p>
                 <p>
                   At DBS Tech India, I work across marketplace and secure e-document
-                  experiences, with a strong focus on Micro-Frontends, performance,
-                  testing, application security and modern AI-assisted development.
+                  experiences, integrating frontend applications with Node.js/Express
+                  backend services, with a strong focus on Micro-Frontends, performance,
+                  application security, VAPT remediation, testing and modern AI-assisted development.
                 </p>
               </AboutCard>
               <QuoteCard>
@@ -218,7 +230,7 @@ function App() {
           <Section id="skills">
             <SectionHeading>
               <Eyebrow>Technical Expertise</Eyebrow>
-              <h2>A modern frontend engineering toolkit.</h2>
+              <h2>A modern full-stack engineering toolkit.</h2>
             </SectionHeading>
             <SkillGrid>
               {Object.entries(skills).map(([group, items]) => (
@@ -236,6 +248,7 @@ function App() {
               <div>
                 <h3>Bachelor of Technology — Computer Science</h3>
                 <p>Rajiv Gandhi University of Knowledge Technologies, Basar · 2015</p>
+                <p>Pre-University Course (XII) · Rajiv Gandhi University of Knowledge Technologies, Basar · 2011</p>
               </div>
               <Award>
                 <strong>Extra Miler Award</strong>
@@ -249,8 +262,8 @@ function App() {
             <h2>Open to the next opportunity.</h2>
             <p>
               I’m currently working at DBS Tech India and open to conversations about
-              Senior Frontend Engineer roles, challenging frontend architecture problems,
-              and teams building meaningful digital products.
+              Full-Stack Engineer roles, challenging frontend and backend architecture problems,
+              and teams building secure, meaningful digital products.
             </p>
             <ContactButton href="mailto:sanjeev.bomma1190@gmail.com">Get in touch ↗</ContactButton>
             <ContactLinks>
